@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>text-editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/81ace51392.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main class="bg-emerald-300 h-screen">
+      <div id="editor container">
+        <h1 class="text-center text-4xl font-bold mb-10">My Text Editor</h1>
+        <div id="frame-div" class="border-2 border-black w-3/5 mx-auto p-6">
+          <div id="icon-div" class="flex flex-col gap-6 md:grid md:grid-cols-3">
+            <div class="text-center flex gap-4 mx-auto">
+
+              <i id="bold" class="fa-solid fa-bold hover:scale-110"></i>
+
+              <i id="italic" class="fa-solid fa-italic hover:scale-110"></i>
+
+              <i id="underline" class="fa-solid fa-underline hover:scale-110"></i>
+            </div>
+            <div class="text-center flex gap-4 mx-auto">
+              <i id="align-left" class="fa-solid fa-align-left hover:scale-110"></i>
+
+              <i id="align-center" class="fa-solid fa-align-center hover:scale-110"></i>
+
+              <i id="align-right" class="fa-solid fa-align-right hover:scale-110"></i>
+
+              <i id="align-justify" class="fa-solid fa-align-justify hover:scale-110"></i>
+            </div>
+
+            <div class="text-center flex gap-4 mx-auto">
+              <span class="font-light">Font size:</span>
+              <input placeholder="0" id="font-size" type="number" class="w-10 hover:scale-150" />
+              <i id="font-case" class="fa-solid fa-font hover:scale-110 mt-1"></i>
+              <input class="hover:scale-110" id="color-input" type="color">
+              <button id="color-btn" class="hover:scale-110 bg-red-500 py-1 px-2 rounded font-bold text-white">Set</button>
+            </div>
+          </div>
+<!-- textarea -->
+          <div id="textarea-div" class="text-center mt-6">
+            <textarea
+              name=""
+              id="text-field"
+              class="w-full h-96 outline-none p-4"
+            ></textarea>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+
+    <script src="style.js"></script>
+  </body>
+</html>
